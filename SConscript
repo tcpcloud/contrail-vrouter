@@ -153,6 +153,7 @@ if sys.platform != 'darwin':
 
         make_cmd = 'make -C ' + dpdk_src_dir \
             + ' EXTRA_CFLAGS="' + DPDK_FLAGS + '"' \
+            + ' ARCH=x86_64' \
             + ' O=' + dpdk_dst_dir \
             + ' '
         dpdk_lib = env.Command('dpdk_lib', None,
