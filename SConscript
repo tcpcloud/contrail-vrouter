@@ -190,7 +190,7 @@ if sys.platform != 'darwin':
             + ' '
 
         # If this var is set, then we need to pass it to make cmd for libdpdk
-        if kernel_build_dir:
+        if kernel_dir:
             print "info: Adjusting libdpdk build to use RTE_KERNELDIR=%s" % kernel_build_dir
             make_cmd += "RTE_KERNELDIR=%s " % kernel_build_dir
 
